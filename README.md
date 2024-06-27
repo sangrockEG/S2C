@@ -11,8 +11,8 @@ You need to specify place VOC2012 under ./data folder.
 * You need to run the Segment-Everything option using SAM as preprocessing. Please refer to get_se_map.py for further details.
 
 ## Usage
-> This repository generates CAMs (seeds) to train the segmentation network.
-> For further refinement, refer [RIB](https://github.com/jbeomlee93/RIB) and [SAM_WSSS](https://github.com/cskyl/SAM_WSSS).
+* This repository generates CAMs (seeds) to train the segmentation network.
+* For further refinement, refer [RIB](https://github.com/jbeomlee93/RIB) and [SAM_WSSS](https://github.com/cskyl/SAM_WSSS).
 
 ### Training
 * Please specify the name of your experiment.
