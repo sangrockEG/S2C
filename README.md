@@ -5,13 +5,12 @@ Official repository for CVPR 2024 Oral paper: "**From SAM to CAMs: Exploring Seg
 * Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, 4 GPUs.
 * [The PASCAL VOC 2012 development kit](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/):
 You need to specify place VOC2012 under ./data folder.
-* ImageNet-pretrained weights for resnet38d are from [[resnet_38d.params]](https://drive.google.com/file/d/1fpb4vah3e-Ynx4cv5upUcqnpJFY_FTja/view?usp=drive_link) (From the google drive for our another paper, AEFT.)
-You need to place the weights as ./pretrained/resnet_38d.params. **Note that we have reuploaded this file, as the file had been damaged.**
+* ImageNet-pretrained weights for resnet38d are from [[resnet_38d.params]](https://drive.google.com/file/d/1fpb4vah3e-Ynx4cv5upUcqnpJFY_FTja/view?usp=drive_link). You need to place the weights as ./pretrained/resnet_38d.params.
 * You need to run the Segment-Everything option using SAM as preprocessing. Please refer to get_se_map.py for further details.
 
 ## Usage
 > This repository generates CAMs (seeds) to train the segmentation network.
-> For further refinement, refer [RIB](https://github.com/jbeomlee93/RIB) and SAM_WSSS(https://github.com/cskyl/SAM_WSSS).
+> For further refinement, refer [RIB](https://github.com/jbeomlee93/RIB) and [SAM_WSSS](https://github.com/cskyl/SAM_WSSS).
 
 ### Training
 * Please specify the name of your experiment.
