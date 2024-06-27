@@ -1,7 +1,7 @@
 # S2C
 Official repository for CVPR 2024 Oral paper: "**From SAM to CAMs: Exploring Segment Anything Model for Weakly Supervised Semantic Segmentation**" by [Hyeokjun Kweon](https://scholar.google.com/citations?user=em3aymgAAAAJ&hl=en&oi=ao).
 
-# Prerequisite
+## Prerequisite
 * Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, 4 GPUs.
 * [The PASCAL VOC 2012 development kit](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/):
 You need to specify place VOC2012 under ./data folder.
