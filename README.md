@@ -10,7 +10,7 @@ You need to specify place VOC2012 under ./data folder.
 # Prerequisite on SAM 
 * Please install [SAM](https://github.com/facebookresearch/segment-anything) and download vit_h version as ./pretrained/sam_vit_h.pth
 * Note that I slightly modified the original code of SAM for fast batch-wise inference during the training of CAMs.
-* After installing SAM properly, you should substitute the files 'mask_decoder.py' and 'sam.py' in the segment_anything/modeling directory with the files in this repository.
+* After installing SAM properly, you should substitute the files 'mask_decoder.py' and 'sam.py' in the segment_anything/modeling directory with the files in 'modeling' of this repository.
 * Additionally, you need to run the Segment-Everything option using SAM as preprocessing. Please refer to get_se_map.py for further details.
 
 ## Usage
