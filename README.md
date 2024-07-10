@@ -7,8 +7,11 @@ Official repository for CVPR 2024 Oral paper: "**From SAM to CAMs: Exploring Seg
 You need to specify place VOC2012 under ./data folder.
 * ImageNet-pretrained weights for resnet38d are from [[resnet_38d.params]](https://drive.google.com/file/d/1fpb4vah3e-Ynx4cv5upUcqnpJFY_FTja/view?usp=sharing). You need to place the weights as ./pretrained/resnet_38d.params.
 
+# Prerequisite on SAM 
 * Please install [SAM](https://github.com/facebookresearch/segment-anything) and download vit_h version as ./pretrained/sam_vit_h.pth
-* You need to run the Segment-Everything option using SAM as preprocessing. Please refer to get_se_map.py for further details.
+* Note that I slightly modified the original code of SAM for fast batch-wise inference during the training of CAMs.
+* After installing SAM properly, you should substitute the files 'mask_decoder.py' and 'sam.py' in the segment_anything/modeling directory with the files in this repository.
+* Additionally, you need to run the Segment-Everything option using SAM as preprocessing. Please refer to get_se_map.py for further details.
 
 ## Usage
 * This repository generates CAMs (seeds) to train the segmentation network.
